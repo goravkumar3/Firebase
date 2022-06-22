@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portaliskillers</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script >
+        const firebaseConfig = {
+            apiKey: "AIzaSyDq2dmz9sTD6e25Ek5htoDtkfNKKi0JeF4",
+            authDomain: "bitcoin-9dba3.firebaseapp.com",
+            projectId: "bitcoin-9dba3",
+            storageBucket: "bitcoin-9dba3.appspot.com",
+            messagingSenderId: "427279505829",
+            appId: "1:427279505829:web:1340f7d9ca445c162df04c",
+            measurementId: "G-Y8T5FL230J"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" href="./../css/form.css">
+</head>
+
+<body>
+    <div class="login">
+        <h1>Student Sign Up</h1>
+        <img src="./photo/colorlogo-01.png" alt="" width="40%">
+           <form onsubmit="sign(); return false">
+            <input type="text" id="name" placeholder="Name" />
+            <input type="text" id="fathername" placeholder="Father Name" />
+            <input type="email" id="email" placeholder="Enter Email Address">
+            <input type="password" id="password" placeholder="Enter Password">
+            <input type="number" id="CINC" placeholder="CINC Number" />
+            <input type="number" id="Number" placeholder="Mobile Number" />
+            <select id="Courses" name="Courses">
+                <option >Select Course</option>
+                <option >Web Developer</option>
+                <option >App Developer</option>
+                <option >Wordpress</option>
+                <option >Graphic Designer</option>
+                <option >Freelancing</option>
+            </select>
+            <select id="qualify" name="qualify">
+                <option >Select Qualification</option>
+                <option >Matriculation</option>
+                <option >Intermediate</option>
+                <option >Graduate</option>
+            </select>
+            <select id="Gender" name="Gender">
+                <option >Select Gender</option>
+                <option >Male</option>
+                <option >Female</option>
+            </select>
+            <input type="file" name="Photo" id="image" value="Upload photo" />
+            <div class="laptop">
+                <input type="checkbox" name="laptop" id="laptop" class="check"/>
+                <label for="laptop">I have laptop for classes</label>
+            </div>
+            <div>
+                <span>Already a Member?<a href="./login.html">Signin</a></span>
+            </div>
+            <p id="erorr"></p>
+            <input type="submit" value="Signup" id="signup" />
+        </form>
+</body>
+<script src="./../js/Signup.js"></script>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iskillers</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script >
+        const firebaseConfig = {
+            apiKey: "AIzaSyDq2dmz9sTD6e25Ek5htoDtkfNKKi0JeF4",
+            authDomain: "bitcoin-9dba3.firebaseapp.com",
+            projectId: "bitcoin-9dba3",
+            storageBucket: "bitcoin-9dba3.appspot.com",
+            messagingSenderId: "427279505829",
+            appId: "1:427279505829:web:1340f7d9ca445c162df04c",
+            measurementId: "G-Y8T5FL230J"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/resp.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="./../pic/ikillers-01 (1).png" alt="" height="55px">
+            </div>
+            <div class="nav">
+                <span><a href="#">Home</a></span>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Courses</a>
+                    <div class="dropdown-content">
+                        <a href="#">Features</a>
+                        <a href="#">Channels</a>
+                        <a href="#">Digital HQ</a>
+                        <a href="#">Integrations</a>
+                        <a href="#">Security</a>
+                        <a href="#">Slack Connect</a>
+                        <a href="#">Customers</a>
+                        <a href="#">Download Slack</a>
+
+                    </div>
+                </div>
+                <span><a href="#">About</a></span>
+                <span><a href="#">Contact</a></span>
+                <span><a href="#">Gallery</a></span>
+                <span><a href="#" onclick="logOut()">Logout</a></span>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="main">
+                <h1>
+                    iSkillers IT Skills Training
+                    & Job creation Program
+                </h1>
+                <p>
+                    Browse our range of global standard digital courses which are designed by expert IT professionals
+                    and
+                    are based on real situations and life’s business cases. After geting training courses at iSkillers,
+                    you
+                    will have systemic theoretical knowledge in the profession and become a specialist with current
+                    practical skills to find jobs.
+                </p>
+                <div class="btn">
+                    <button><a href="#">APPLY</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sect">
+        <h1>Available Training Courses</h1>
+        <div class="Main-card">
+            <div class="card">
+                <h1>E-Commerce</h1>
+                <div class="img">
+                    <img src="./../pic/download.png" alt="" height="30px" width="30px" />
+                </div>
+                <p>Learn how to create and promote online stores. Understand how advertising works on social networks
+                    and
+                    search engines.
+                </p><br />
+                <div class="bott">
+                    <span> Advance Monthly: 2500</span>
+                    <span>Duration: 3 months</span>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Wordpress</h1>
+                <div class="img">
+                    <img src="./../pic/download (4).png" alt="" height="30px" width="30px" />
+                </div>
+                <p>
+                    Learn how to create websites, blogs or online stores with wordpress to earn money as freelancer.
+                </p><br />
+                <div class="bott">
+                    <span> Advance Monthly: 2500</span>
+                    <span>Duration: 3 months</span>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Freelancing</h1>
+                <div class="img">
+                    <img src="./../pic/download (2).png" alt="" height="30px" width="30px" />
+                </div>
+                <p>Learn how to start working for yourself or Clients online from home, have a constant flow of
+                    customers and establish a stable income.
+                </p>
+                <div class="bott">
+                    <span> Advance Monthly: 2500</span>
+                    <span>Duration: 3 months</span>
+                </div>
+            </div>
+            <div class="card">
+                <h1>YouTube Mastery</h1>
+                <div class="img">
+                    <img src="./../pic/youtube-6f3e69319c3adaff5f768cdcd765ba7c.png" alt="" height="30px" width="30px" />
+                </div>
+                <p>How to make money with YouTube.<br /><br />
+                </p>
+                <div class="bott">
+                    <span> Advance Monthly: 2500</span>
+                    <span>Duration: 3 months</span>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Social Media Marketing</h1>
+                <div class="img">
+                    <img src="./../pic/marketing icon-08-827575b064981509384b4007b5b6d254.png" alt="" height="30px"
+                        width="30px" />
+                </div>
+                <p>Master a full range of social media marketing services and become a professional social media
+                    marketer.
+                </p>
+                <div class="bott">
+                    <span> Advance Monthly: 2500</span>
+                    <span>Duration: 3 months</span>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Web Development & Web Designing</h1>
+                <div class="img">
+                    <img src="./../pic/download (5).png" alt="" height="30px" width="30px" />
+                </div>
+                <p>Start your career in Web design & Development and be able to take your orders after 6 Months of
+                    Training.
+                </p>
+                <div class="bott">
+                    <span> Advance Monthly: 2500</span>
+                    <span>Duration: 3 months</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sect1">
+        <div class="mansct">
+            <div class="side1">
+                <img src="./../pic/fivePoints.png" alt="" height="500px">
+            </div>
+            <div class="side2">
+                <h1>Welcome to iSkillers</h1>
+                <p>The world around us is changing every minute, globalizing, and the speed of information exchange and
+                    its
+                    volume are steadily increasing. A person who wants to keep up with the times, understand the new
+                    global
+                    trends in the development of science and technology, must have curiosity, be active and have
+                    analytical
+                    thinking and leadership qualities. But in addition, in order to be competitive he needs to have a
+                    huge
+                    amount of knowledge and skills, including professional ones.
+                    The high pace of scientific and technological progress and the wide spread of information
+                    technologies
+                    leads to the fact that any area of activity is constantly enriched with new discoveries, methods and
+                    techniques of work. We offer only programs that will help you climb a few steps higher in your life.
+                    All
+                    training courses in which we work are in demand and relevant. We use only the latest proven and
+                    reliable
+                    methods of trainings. We do not have boring lectures. Our trainers use an interactive approach that
+                    significantly improves the efficiency of training and know all modern training methods. New
+                    knowledge is
+                    an empowerment of you and a chance to make your life better, brighter and more diverse.</p>
+            </div>
+        </div>
+        <div class="mansct">
+            <div class="side2">
+                <h1>Training Program Mission</h1>
+                <p>The iSkillers is looking to the future. It is founded with the aim of giving everyone who strives for
+                    self-realization the knowledge that will take him to a new, higher level, and give him more
+                    self-confidence, as well as help him to achieve success in his profession and career. We focus on
+                    the latest approaches to training, the most modern, innovative technologies.</p>
+            </div>
+            <div class="side1">
+                <img src="./../pic/mission-31294f6bdb0ed986e741820eb8804e3e.png" alt="" height="500px">
+            </div>
+
+        </div>
+        <div class="mansct">
+            <div class="side1">
+                <h1> Reasons to learn at iSkillers
+                </h1>
+                    <img src="./../pic/mobile-app-01-b078af88857286111b34b8114af39ced.png" alt="" height="500px">
+            </div>
+            <div class="side2">
+                <ul>
+                    <li>Our students receive not just specialized, but primarily professional knowledge that expands
+                        their horizons and allows them to take a worthy place in the ranks of professionals.</li>
+                    <li>We pay attention to practical exercises. The training methodology developed by our trainers
+                        allows you to acquire important professional skills in a fairly short time.</li>
+                    <li>We pay attention to practical exercises. The training methodology developed by our trainers
+                        allows you to acquire important professional skills in a fairly short time.</li>
+                    <li>We regularly modernize the database equipment, which allows to ensure high efficiency of the
+                        educational process.</li>
+                    <li>Flexible schedule. Learn whenever it suits you. Weekdays, Weekends, morning or evenings. We’ll
+                        adjust the schedule for you.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <div class="left">
+                <h2>About Program</h2>
+                <p>iSkillers IT Skills Training & Job creation Program is provincial, classroom based and online
+                    training program, started by Tharparkar’s first IT Company "iSkillers" to impart trainings to youth
+                    of Sindh. We aim to train one million people across Sindh in next 10 years.</p>
+                    <div class="icons">
+                        <img src="./../pic/facebook-app-symbol.png" alt="">
+                        <img src="./../pic/instagram (1).png" alt="">
+                        <img src="./../pic/twitter.png" alt="">
+                        <img src="./../pic/linkedin.png" alt="">
+                    </div>
+            </div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>iSkillers, 1st Floor Kallar House, North Colony, Mithi,Pakistan</li>
+                    <li>03322511711</li>
+                    <li>info@iskillers.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Copyright &copy; 2022 iSkillers. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="./../js/home.js"></script>
+</html>
